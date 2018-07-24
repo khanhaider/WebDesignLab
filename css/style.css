@@ -1,48 +1,106 @@
 body{
-	font-size: 16pt;
-	margin:0;
-	box-sizing: border-box;
-}
+ 	font-size: 16pt;
+ 	margin: 0;
+ 	box-sizing: border-box;
+ }
 
-header > nav ul {
+header nav ul , footer{
 	list-style: none;
-	background-color: #4f4f4f;
+	background-color: #484b4d;
 	margin: 0;
 	text-align: center;
-	font-size: 18pt;
+	
 
 }
-header > nav ul li > a {
+
+header nav ul li a {
 	text-decoration: none;
-	color: #ffffff;
+	color:#ffffff;
+
 }
-header > nav ul li{
-	display: inline-block;	
+
+header nav ul li {
+	display:inline-block;
 	margin-left: 10px;
-	padding: 10px;
+	padding: 7px;
+
 }
-footer>div{
-	padding: 10px;
+
+footer div{
+	padding: 5px;
 	color: #ffffff;
 }
-.myphoto{
-	text-align: center;
-	color:#0077b5; 
-}
-.myphoto img{
-	width: 25%;
-	border: 1px solid #000000;
-	border-radius: 50%;
+
+.mypic{
 	
+	text-align: center;
+	color: #0077c5;
 }
-.contact-form,.social-media{
+
+.mypic img{
+	width: 30%;
+	border-radius: 50%;
+	border: 2px dotted black
+}
+.social-media a{
+	display: block;
+	color:#000000;
+	text-decoration: none;
+
+}
+.contact-form *,.social-mesia *{
+	margin-bottom:10px;
+	width: 100%;
+}
+.contact-form input[type="submit"]{
+	width:80px;
+	display: block;
+	margin: 0 auto;
+	background-color: #0a84ff;
+	color: #ffffff;
+	border-radius: 2px;
+    border:0;
+}
+
+/* contact page */
+
+.contact-form, .social-media{
 	position: relative;
 	float: left;
 	width: 45%;
 	margin-left: 2%;
+	border: 1px solid #000000;
+	padding: 10px;
+	border-radius: 10px;
+
+
 }
+.contact-form input[type="submit"]:hover{
+	opacity: 0.8;
+	color: #fafafa;
+	background-color: black;
+}
+
+
+
 footer{
 	position: fixed;
 	width: 100%;
 	bottom: 0;
+}
+
+.gallery figure img{
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+}
+.gallery figure{
+	border: 1px solid black;
+	position: relative;;
+	float: left;
+	padding: 5px;
+	margin: 10px;
+	text-align: center;
+	font-style: italic;
+
 }
